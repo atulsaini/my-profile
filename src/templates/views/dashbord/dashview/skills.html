@@ -1,0 +1,81 @@
+<div class="skill-container pt-4 pb-4">
+  <div class="container-fluid">
+	  <!-- <h2>{{skills}}</h2> -->
+    <div class="development-stack">
+      <div class="row">
+        <div class="col-sm-12 pb-3">
+          <h4>Development Stack</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 pb-4" data-ng-repeat="skill in vm.skills.development">
+          <div class="card box-shadow1">
+            <div class="card-header {{skill.theme}}">
+              <div class="media">
+                <div class="mr-3 p-t-31">
+                  <p class="text-purple-50 f-w-5">{{skill.Software}}</p>
+                </div>
+                <div class="media-body text-right">
+                  <img src="dist/img/{{skill.image}}" alt="angular" style="height: 84px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <h2>{{skills}}</h2> -->
+    <div class="design-stack pt-5">
+      <div class="row">
+        <div class="col-sm-12 pb-3">
+          <h4>Design Stack</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 pb-4" data-ng-repeat="design in vm.skills.design">
+          <div class="card box-shadow1">
+            <div class="card-header {{design.theme}}">
+              <div class="media">
+                <div class="mr-3 p-t-31">
+                  <p class="text-purple-50 f-w-5">{{design.Software}}</p>
+                </div>
+                <div class="media-body text-right">
+                  <img src="dist/img/{{design.image}}" alt="angular" style="height: 84px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- other-stack -->
+    <div class="other-stack pt-5">
+      <div class="row">
+        <div class="col-sm-12 pb-3">
+          <h4>Other Stack</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 pb-4" data-ng-repeat="other in vm.skills.other">
+          <div class="card box-shadow1">
+            <div class="card-header {{other.theme}}">
+              <div class="media">
+                <div class="mr-3 p-t-31">
+                  <p class="text-purple-50 f-w-5">{{other.Software}}</p>
+                </div>
+                <div class="media-body text-right">
+                  <img src="dist/img/{{other.image}}" alt="angular" style="height: 84px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>  
+</div>

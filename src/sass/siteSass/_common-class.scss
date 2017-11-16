@@ -1,0 +1,49 @@
+
+//color 
+.bg-transparent{background-color: $bg-transparent}
+
+
+
+// position
+.position-r{ position: relative;}
+.position-a{ position: absolute;}
+.position-f{ position: fixed;}
+.position-s{ position: static;}
+
+// space margin and padding
+.left-0{left: $left;}
+.right-0{right: $right;}
+.top-0{top: $top;}
+.bottom-0{bottom: $bottom;}
+
+// button
+.btn:focus, .btn.focus{box-shadow: none;}
+
+// font weight
+
+// display
+.display-n{display: $display-none;}
+.display-b{display: $display-block;}
+
+
+// box-shadow
+.box-shadow1{box-shadow: $box-shadow1;}
+.box-shadow2{box-shadow: $box-shadow2;}
+.box-shadow3{box-shadow: $box-shadow3;}
+
+// .m-auto{margin: 0 auto;}
+
+// border-radius
+.b-r-6{border-radius: varNumPx(6);}
+.b-r-25{border-radius: varNumPx(25);}
+.b-r-30{border-radius: varNumPx(30);}
+
+.b-r-50{border-radius: varNumPerc(50)}
+
+// font-weight
+.f-w-5{font-weight: $f-w-500;}
+
+// height
+.height-355{height: varNumRem(355);}
+
+.m-t-pottem{margin-top:- varNumRem(20);}

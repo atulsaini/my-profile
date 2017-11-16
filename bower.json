@@ -1,0 +1,20 @@
+{
+  "name": "my-profile",
+  "description": "profile",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "v4.0.0-beta",
+    "angular-ui-router": "^1.0.6"
+  }
+}

@@ -1,0 +1,38 @@
+<!-- <h1>{{recentProjects}}</h1> -->
+
+<div class="portfolio mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4" data-ng-repeat="portfolios in vm.portfolioDetail">
+        <div class="card bg-transparent border-0"> 
+          <div class="card-tem-img box-shadow3 m-t-pottem b-r-6">
+            <img src="dist/img/recent.png" class="w-100 b-r-6" alt="">
+          </div>
+          <div class="card-body box-shadow2 ml-3 mr-3 rounded-bottom">
+            <div class="row">
+              <div class="col-sm-8">
+                <h4>{{portfolios.title}}</h4>
+              </div>
+              <div class="col-sm-4 ">
+                <div class="text-right">
+                  <button class="btn btn-sm blue-400 pr-3 pl-3 text-grey-50 font-weight-bold box-shadow">VIEW</button>
+                </div>
+                
+              </div>
+            </div>
+            <p class="mb-0 font-weight-bold">Use Tool</p>
+            <div>
+              <button class="btn btn-sm text-grey-50 yellow-900 font-s-10 font-weight-bold mb-2">HTML5</button>
+              <button class="btn btn-sm text-grey-50 purple-a200 font-s-10 font-weight-bold mb-2">SASS</button>
+              <button class="btn btn-sm text-grey-50 pink-a400 font-s-10 font-weight-bold mb-2">ANGULAR JS</button>
+              <button class="btn btn-sm text-grey-50 red-900 font-s-10 font-weight-bold mb-2">NPM</button>
+              <button class="btn btn-sm text-grey-50 yellow-800 font-s-10 font-weight-bold mb-2">BOWER</button>
+              <button class="btn btn-sm text-grey-50 deep-purple-400 font-s-10 font-weight-bold mb-2">BOOTSTRAP 4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  

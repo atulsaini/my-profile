@@ -1,0 +1,34 @@
+<!-- <h1>{{websites}}</h1> -->
+
+<div class="template mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4" data-ng-repeat="template in vm.templates">
+        <div class="card box-shadow2">
+          <div class="card-tem-img ml-2 mr-2 box-shadow3 m-t-pottem">
+            <img src="dist/img/recent.png" class="w-100" alt="">
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-9">
+                <h4>{{template.title}}</h4>
+              </div>
+              <div class="col-sm-3 text-right">
+                <button class="btn btn-sm blue-400 pr-3 pl-3 text-grey-50 font-weight-bold box-shadow">VIEW</button>
+              </div>
+            </div>
+            <p class="mb-0 font-weight-bold">Use Tool</p>
+            <div>
+              <button class="btn btn-sm text-grey-50 yellow-900 font-s-10 font-weight-bold mb-2">HTML5</button>
+              <button class="btn btn-sm text-grey-50 purple-a200 font-s-10 font-weight-bold mb-2">SASS</button>
+              <button class="btn btn-sm text-grey-50 pink-a400 font-s-10 font-weight-bold mb-2">ANGULAR JS</button>
+              <button class="btn btn-sm text-grey-50 red-900 font-s-10 font-weight-bold mb-2">NPM</button>
+              <button class="btn btn-sm text-grey-50 yellow-800 font-s-10 font-weight-bold mb-2">BOWER</button>
+              <button class="btn btn-sm text-grey-50 deep-purple-400 font-s-10 font-weight-bold mb-2">BOOTSTRAP 4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

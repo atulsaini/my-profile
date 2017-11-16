@@ -1,0 +1,55 @@
+<!-- <h1>{{recentProjects}}</h1> -->
+
+<div class="recent-project mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card border-0">
+          <div class="row pb-3" data-ng-repeat="recentProDetail in vm.recentProjectDetail">
+            <div class="col-sm-6 pr-0">
+              <div class="box-shadow3 rounded-left">
+                <img src="dist/img/{{recentProDetail.img}}" class="w-100 rounded-left height-355" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 pl-0 mt-5">
+              <div class="card-body box-shadow2">
+                <div class="project-title">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <p class="text-blue-400 mb-0 font-weight-bold">
+                        <span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                        Title
+                      </p>
+                      <p class="pl-4 text-grey-600">{{recentProDetail.title}}</p>
+                    </div>
+                    <div class="col-sm-4 text-right">
+                      <button class="btn btn-sm blue-400 pr-3 pl-3 text-grey-50 font-weight-bold box-shadow">VIEW</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <p class="text-blue-400 mb-0 font-weight-bold">
+                    <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    Description
+                  </p>
+                  <p class="pl-4 text-grey-600">{{recentProDetail.description}}</p>
+                </div>
+                <div class="project-use-tool">
+                  <p class="text-blue-400 mb-0 pb-1 font-weight-bold">Use Tool</p>
+                  <p class="pl-4">
+                    <button class="btn btn-sm text-grey-50 box-shadow yellow-900 font-weight-bold">HTML5</button>
+                    <button class="btn btn-sm text-grey-50 purple-a200 box-shadow font-weight-bold">SASS</button>
+                    <button class="btn btn-sm text-grey-50 box-shadow pink-a400 font-weight-bold">ANGULAR JS</button>
+                    <button class="btn btn-sm text-grey-50 box-shadow red-900 font-weight-bold">NPM</button>
+                    <button class="btn btn-sm text-grey-50 box-shadow yellow-800 font-weight-bold">BOWER</button>
+                    <button class="btn btn-sm text-grey-50 box-shadow deep-purple-400 font-weight-bold">BOOTSTRAP 4</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

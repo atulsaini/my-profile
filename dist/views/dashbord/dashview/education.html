@@ -1,0 +1,56 @@
+<div class="education-container mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="timeline-sec position-r m-b-30">
+              
+          <div class="row" data-ng-repeat="educations in vm.education.detail">
+            <div class="col-sm-8">
+              <article class="timeline-entry position-r m-t-5 m-l-30 m-b-10">
+                <div class="timeline-entry-inner position-r">
+                  <div class="timeline-icon text-grey-50 {{educations.theam}} b-block text-center font-s-15 float-left">
+                    <i class="fa fa-{{educations.icon}}" aria-hidden="true"></i>
+                  </div>
+      
+                  <div class="timeline-label position-r m-l-60 box-shadow2">
+                    <div class="card border-0">
+                      <div class="card-head pt-3 pl-3 pb-2 grey-200">
+                        <h5 class="">{{educations.title}}</h5>
+                      </div>
+                      <div class="card-body position-r {{educations.theam}}">
+                        <p class="text-grey-50">C.C.S UNIVERSITY, MEERUT</p>
+                        <p class="text-grey-50">Hold's Bachelor of technology(2012 - 2016) from Computer 
+                           Science & Engineering with an aggregate of 65%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-4 set-size charts-container">
+              <div class="pie-wrapper progress-45 style-2 position-r">
+                <span class="label d-block position-a text-center b-r-50 text-grey-50 p-t-14">{{educations.mark}}<span class="smaller font-s-28 position-a">%</span></span>
+                <div class="pie h-100 w-100 l-0 t-0 position-a">
+                  <div class="circle-left-side half-circle {{educations.borderColor}} w-100 h-100 l-0 t-0 position-a b-r-50"></div>
+                  <div class="right-side half-circle {{educations.borderColor}} w-100 h-100 l-0 t-0 position-a b-r-50"></div>
+                </div>
+                <div class="shadow h-100 w-100 b-r-50 box-shadow2"></div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          <article class="timeline-entry begin position-r m-t-5 m-l-30 mb-0">
+            <div class="timeline-entry-inner">
+              <div class="timeline-icon b-block text-center font-s-15 float-left grey-50">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+// mixin scss
+@mixin trbl($top: null, $right: null, $bottom: null, $left: null) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// mixin font size
+@mixin font-size($sizeValue) {
+  $sizeRemValue: ($sizeValue / 16) + rem;
+  font-size: $sizeRemValue;
+  // font-size: ($sizeValue * 10) + px;
+  // font-size: ($sizeValue) + px;
+  // font-size: $sizeValue + rem;
+}
+
+@mixin numberVariable($numVariable: 1.6) {
+    $btn-bg-color: ($numVariable) + px;
+    color: $btn-bg-color;
+}
+
+// $pxs: ();
+// @for $i from 1 through 10 {
+//   $pxs: append($pxs, $i * 1px);
+// }
+// border-radius: nth($pxs, 10);
+
+// @function stripAndPx($in){
+//   $stripped: $in / ($in * 0 + 1); //strip unit
+//   @return (($stripped) * 1) * 1px; //convert to px
+// }
+
+// no px only value
+@function varNum($value){
+  @return($value);
+}
+
+// with px
+@function varNumPx($pixel){
+  @return ($pixel) * 1px;
+}
+
+//value in a px to rem
+@function varNumRem($rem){
+  $remSize: $rem / 16;
+  @return #{$remSize}rem;
+}
+
+// with persentage
+@function varNumPerc($perc){
+  @return($perc) * 1%;
+}
+
+
+
+
+
+// @mixin button-style() {
+//     $text-color: lime;
+//     color: $text-color;
+// }
+
+@mixin width-px($width-px){
+  width: $width-px;
+}
+
+
+// font weight
+@mixin font-weight($weight) {
+  $weights: (
+    thin: 100,
+    extra-light: 200,
+    ultra-light: 200,
+    light: 300,
+    normal: 400,
+    book: 400,
+    regular: 400,
+    medium: 500,
+    semi-bold: 600,
+    demi-bold: 600,
+    bold: 700,
+    extra-bold: 800,
+    ultra-bold: 900,
+    heavy: 900,
+    black: 900,
+    ultra: 900,
+    ultra-black: 900,
+    extra-ultra: 900
+  );
+
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+
+  font-weight: $output;
+}
+
+
+//font-Size
+$fontSize: 100;
+@for $i from 0 through $fontSize {
+.font-s-#{$i} { font-size: #{$i}px; }
+}
+
+
+
+
+// @mixin trbl-0($trbl-0) {
+//   $trbl-0s: (
+//     top: 0,
+//     right: 0,
+//     left: 0,
+//     bottom: 0
+//   );
+//
+//   $trbl-output: $trbl-0;
+//   @if map-has-key($trbl-0s, $trbl-0) {
+//     $trbl-output: map-get($trbl-0s, $trbl-0);
+//   }
+//
+//   trbl-0: $trbl-output;
+// }

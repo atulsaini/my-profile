@@ -1,0 +1,113 @@
+<div class="home-layout-box position-r">
+
+  <!-- home-page-banner -->
+  <div class="home-page-banner">
+    <div id="back" class="t-0 r-0 l-0"></div>
+    <div class="home-img-info text-center position-r p-t-70">
+      <div class="img-border">
+        <div class="img-border-inner light-blue-200">
+          <img src="dist/img/profile-pic1.png" alt="">
+        </div>
+      </div>
+      <h3 class="p-t-30 text-light-green-50 pb-2">Atul Kumar Saini</h3>
+      <button class="btn profile-btn pl-4 pr-4 b-r-30 f-w-5"> Front End Developer </button>
+    </div>
+  </div>
+  <!-- home-page-banner end -->
+
+  <!-- project and Know About Me -->
+  <div class="project-know-about pt-4 position-r">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8 objective-home">
+          <h3 class="mb-0">OBJECTIVE</h3>
+          <!-- <div class="circle p-t-3 p-l-6 grey-50">
+            <i class="fa fa-bullseye font-s-35 text-grey-500 grey-50" aria-hidden="true"></i>
+          </div> -->
+          <hr class="objective-latest-hr mt-1">
+          <div class="flat-card card-objective p-4 box-shadow1 grey-200">
+            <p class="text-blue-900">I aspire to work in an environment demanding technical, programming,
+              communication and functional expertise for facing and overcoming
+              everyday challenges which require me to be up to date with the
+              technology and continuously strive for enhancing my skills.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 letest-twist">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="mb-0">Latest Twist</h3>
+              <!-- <div class="circle p-t-3 p-l-6 grey-50">
+                <i class="fa fa-bullseye font-s-35 text-grey-500 grey-50" aria-hidden="true"></i>
+              </div> -->
+              <hr class="objective-latest-hr mt-1">
+            </div>
+          </div>
+          <div class="flat-card card-objective p-4 box-shadow1 grey-200">
+            <div class="flat-card-body">
+              <p class="text-blue-900">I aspire to work in an environment demanding technical, programming,
+                 communication and functional </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-4 pb-4">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 pb-4" data-ng-repeat="projectData in vm.profileHome.homeData">
+                <div class="flat-card">
+                  <div class="flat-card-head">
+                    <div class="media">
+                      <div class="teal-500 b-r-25" style="padding: 25px 25px 23px 25px; border: 6px solid #eeeeee;">
+                        <i class="fa fa-{{ projectData.icon }} font-s-40 text-grey-50" aria-hidden="true"></i>
+                      </div>
+                      <div class="media-body box-shadow1 grey-200 p-1 pl-2" style="margin-top: 24px;">
+                        <p class="mb-0 text-blue-900">{{ projectData.title }}</p>
+                        <p class="mb-0 font-s-12">{{ projectData.value }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="flat-cart box-shadow1 know-about-me">
+              <div class="flat-card-head grey-200 p-3">
+                <h5 class="mb-0">Know About Me</h5>
+              </div>
+              <div class="flat-card-body p-3 content" ng-class="{less: hidden}">
+                <div class="progress-group pb-3" data-ng-repeat="skill in  vm.profileHome.skills">
+                  <span class="progress-text font-s-12">{{skill.title}}</span>
+                  <span class="progress-number float-right font-s-12"><b class="">{{skill.percentage}}</b>/100</span>
+                  <div class="progress">
+                    <div class="progress-bar {{skill.theme}}" style="width: {{skill.percentage}}%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flat-card-foot text-center grey-200 mt-3">
+                <button class="btn bg-transparent" ng-click="hidden = !hidden">{{hidden ? 'Show' : 'Hide'}}</button>
+              </div>
+            </div>
+            <!-- <div id="accordion" role="tablist">
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" aria-labelledby="collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
